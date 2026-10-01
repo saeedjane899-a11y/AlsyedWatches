@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alsyed | Premium Luxury Watches</title>
+    <!-- Tailwind CSS for modern premium UI styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Icons for WhatsApp and UI elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+        }
+        .text-gold {
+            color: #D4AF37;
+        }
+        .bg-dark-premium {
+            background-color: #0b0c10;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-dark-premium text-gray-100 font-sans antialiased selection:bg-amber-600 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-gray-800 sticky top-0 bg-black/90 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-extrabold tracking-widest text-gold uppercase">Alsyed</span>
+                <span class="text-xs uppercase tracking-widest text-gray-400 border-l border-gray-700 pl-2 hidden sm:inline">Timepieces</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-medium">
+                <a href="#collection" class="hover:text-gold transition">Our Collection</a>
+                <a href="#order-form" class="hover:text-gold transition">Inquire Now</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/923115403570" target="_blank" class="gold-gradient text-black px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:opacity-90 transition inline-flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-sm"></i> Direct Concierge
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="relative py-24 bg-gradient-to-b from-black to-dark-premium overflow-hidden border-b border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-gold tracking-widest uppercase text-xs font-bold block mb-3">Bespoke Horology</span>
+                <h1 class="text-4xl sm:text-6xl font-serif font-light tracking-tight leading-tight mb-6">
+                    Curated Excellence. <br><span class="font-normal text-gold italic">195+ Masterpieces.</span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8 max-w-lg font-light leading-relaxed">
+                    Discover our strictly diversified portfolio of world-class micro-mechanical art. No repetitive duplicates—only pure individual distinction for your wrist. Prices available exclusively upon corporate inquiry.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#collection" class="border border-gold text-gold hover:bg-gold hover:text-black px-8 py-3.5 text-sm uppercase tracking-wider font-semibold transition">
+                        View Vault Collection
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="absolute inset-0 bg-amber-500/10 blur-3xl rounded-full max-w-md mx-auto h-96"></div>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600" alt="Alsyed Signature Watch" class="rounded-xl shadow-2xl border border-gray-800 relative z-10 max-h-[450px] w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Diverse Vault Collection Grid (No Prices Displayed) -->
+    <section id="collection" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-serif tracking-wide mb-3 text-white">The Diversified Catalog</h2>
+            <p class="text-gray-400 max-w-xl mx-auto font-light text-sm">Every single asset selected is structurally distinct. Filtered by luxury design silhouettes.</p>
+        </div>
+
+        <!-- Dynamic Grid of Fully Unique Luxury Styles -->
+        <div id="watches-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- JavaScript dynamically renders distinctly unique luxury watches here -->
+        </div>
+    </section>
+
+    <!-- Dynamic Selection & Detailed Order Form -->
+    <section id="order-form" class="py-20 bg-black border-t border-b border-gray-900">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <i class="fa-solid fa-file-signature text-gold text-3xl mb-4"></i>
+                <h2 class="text-3xl font-serif tracking-wide mb-2 text-white">Secure Order & Inquiry Registry</h2>
+                <p class="text-gray-400 font-light text-sm">Provide your secure delivery parameters. Our logistical desk will contact you via WhatsApp to align confirmation details.</p>
+            </div>
+
+            <form id="secureCheckoutForm" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Your Full Name</label>
+                        <input type="text" required id="clientName" placeholder="e.g., Muhammad Ali" class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Active Contact Number</label>
+                        <input type="tel" required id="clientPhone" placeholder="e.g., +92 300 1234567" class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Select Desired Timepiece Model</label>
+                    <select id="selectedModel" class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-3 text-sm focus:outline-none focus:border-gold transition text-gray-300">
+                        <option value="Alsyed Chronograph Oyster Edition">Alsyed Chronograph Oyster Edition</option>
+                        <option value="Alsyed Royal Skeleton Automatic">Alsyed Royal Skeleton Automatic</option>
+                        <option value="Alsyed Imperial Rose-Gold Dress Geometric">Alsyed Imperial Rose-Gold Dress Geometric</option>
+                        <option value="Alsyed DeepSea Submariner Pro">Alsyed DeepSea Submariner Pro</option>
+                        <option value="Alsyed Minimalist Slate Obsidian Monolith">Alsyed Minimalist Slate Obsidian Monolith</option>
+                        <option value="Alsyed Diamond-Encrusted Stellar Bezel">Alsyed Diamond-Encrusted Stellar Bezel</option>
+                        <option value="Alsyed Vintage Leather Aviator Tourbillon">Alsyed Vintage Leather Aviator Tourbillon</option>
+                        <option value="Alsyed Carbon-Fiber Sport Racing Edition">Alsyed Carbon-Fiber Sport Racing Edition</option>
+                        <option value="Alsyed Perpetual Calendar Platinum Phase">Alsyed Perpetual Calendar Platinum Phase</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2 font-medium">Complete Physical Shipping Address</label>
+                    <textarea required id="clientAddress" rows="4" placeholder="House/Apartment No, Street, Sector, City" class="w-full bg-gray-900 border border-gray-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-gold transition resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full gold-gradient text-black py-4 font-bold text-xs uppercase tracking-widest hover:opacity-95 transition rounded shadow-lg cursor-pointer">
+                    Submit Inquiry via Booking Desk
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer System -->
+    <footer class="bg-black py-12 text-center text-xs text-gray-600 tracking-wider border-t border-gray-900">
+        <p class="mb-2 text-gold font-bold uppercase tracking-widest text-sm">Alsyed Vault</p>
+        <p class="mb-4 text-gray-400 font-light">Curated Global Portfolio — 195+ Distinct Timepiece Items</p>
+        <p>&copy; 2026 Alsyed Luxury Distribution Network. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Logic Scripting for WhatsApp Routing & No-Price Diverse Collection Generation -->
+    <script>
+        const targetWhatsApp = "923115403570";
+
+        // Structured, completely different high-end realistic imagery watch array
+        const luxuryWatches = [
+            { id: 1, name: "Alsyed Chronograph Oyster Edition", category: "Sport Chronograph", img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=600" },
+            { id: 2, name: "Alsyed Royal Skeleton Automatic", category: "Mechanical Skeleton", img: "https://images.unsplash.com/photo-1619134778706-7015533a6150?auto=format&fit=crop&q=80&w=600" },
+            { id: 3, name: "Alsyed Imperial Rose-Gold Dress Geometric", category: "Premium Dress Watch", img: "https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&q=80&w=600" },
+            { id: 4, name: "Alsyed DeepSea Submariner Pro", category: "Heavy Professional Diver", img: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=600" },
+            { id: 5, name: "Alsyed Minimalist Slate Obsidian Monolith", category: "Ultra-Thin Luxury Modern", img: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&q=80&w=600" },
+            { id: 6, name: "Alsyed Diamond-Encrusted Stellar Bezel", category: "High Jewelry Exhibition", img: "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?auto=format&fit=crop&q=80&w=600" },
+            { id: 7, name: "Alsyed Vintage Leather Aviator Tourbillon", category: "Heritage Classic Mechanical", img: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&q=80&w=600" },
+            { id: 8, name: "Alsyed Carbon-Fiber Sport Racing Edition", category: "High-Tech Composite Materials", img: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=600" },
+            { id: 9, name: "Alsyed Perpetual Calendar Platinum Phase", category: "Grand Complication Masterpiece", img: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&q=80&w=600" }
+        ];
+
+        // Generate Grid Layout Automatically
+        const gridContainer = document.getElementById('watches-grid');
+        luxuryWatches.forEach(watch => {
+            const card = document.createElement('div');
+            card.className = "watch-card bg-neutral-950 border border-neutral-900 rounded-lg p-5 flex flex-col justify-between group transition duration-300 hover:border-amber-500/30 shadow-xl";
+
+            // Custom Pre-Filled Text for Immediate WhatsApp Click Action
+            const customMsg = encodeURIComponent(`Hello Alsyed, I am highly interested in inquiring about the exclusive timepiece: [${watch.name}]. Please let me know availability details.`);
+            const waUrl = `https://wa.me/${targetWhatsApp}?text=${customMsg}`;
+
+            card.innerHTML = `
+                <div>
+                    <div class="overflow-hidden rounded-lg mb-4 bg-black aspect-square flex items-center justify-center">
+                        <img src="${watch.img}" alt="${watch.name}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-gold bg-amber-500/5 border border-amber-500/20 px-2 py-0.5 rounded-full inline-block mb-2">${watch.category}</span>
+                    <h3 class="text-base font-medium tracking-wide text-white group-hover:text-gold transition mb-1">${watch.name}</h3>
+                    <p class="text-xs text-gray-500 font-light italic mb-6">Catalog Registry Item Reference #${watch.id + 114}</p>
+                </div>
+                <div class="space-y-2">
+                    <a href="${waUrl}" target="_blank" class="w-full border border-emerald-600/40 text-emerald-400 hover:bg-emerald-600 hover:text-white py-2.5 rounded text-xs font-semibold uppercase tracking-wider transition text-center flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </a>
+                </div>
+            `;
+            gridContainer.appendChild(card);
+        });
+
+        // Form Submit Handler to Route Directly into Pre-filled Client Intent Message
+        document.getElementById('secureCheckoutForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value;
+            const phone = document.getElementById('clientPhone').value;
+            const model = document.getElementById('selectedModel').value;
+            const address = document.getElementById('clientAddress').value;
+
+            const formMessage = `*NEW ALSYED ORDER INQUIRY*
+
+` +
+                                `• *Client Name:* ${name}
+` +
+                                `• *Contact Phone:* ${phone}
+` +
+                                `• *Watch Model Selected:* ${model}
+` +
+                                `• *Delivery Address:* ${address}`;
+
+            const finalWaUrl = `https://wa.me/${targetWhatsApp}?text=${encodeURIComponent(formMessage)}`;
+            window.open(finalWaUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
